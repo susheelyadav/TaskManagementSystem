@@ -13,8 +13,8 @@ window.onload = function () {
     if(localStorage.getItem("completetask")){
         completedtask = JSON.parse(localStorage.getItem("completetask"));
     }
-    console.log(completedtask.length);
-    console.log(arr.length);
+    // console.log(completedtask.length);
+    // console.log(arr.length);
     let total = completedtask.length + arr.length;
     document.getElementById("totaltask").innerHTML = total;
     document.getElementById("upcomingtasks").innerHTML = arr.length;
