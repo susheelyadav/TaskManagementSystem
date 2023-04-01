@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="taskmanagement.css"></link>
+</head>
+<body>
+    <h1 id="title">Task Management System</h1>
+    <div id="threebox">
+        <div class="box" id="box1">
+            <h5>Total Tasks</h5>
+            <p id="totaltask">00</p>
+        </div>
+        <div class="box" id="box2">
+            <h5>Upcoming Tasks</h5>
+            <p id="upcomingtasks">00</p>
+        </div>
+        <div class="box" id="box3">
+            <h5>Completed Tasks</h5>
+            <p id="completedtasks">00</p>
+        </div>
+    </div>
+    <form id="menu">
+        <input type="text" placeholder="Task title" id="titleName" class="remove"></input>
+        <input type="date" id="date" class="remove"  ></input>
+        <input type="time" id="time" class="remove"  ></input>
+        <select id="taskType" >
+            <option value="">--Select a task--</option>
+            <option value="task">Task</option>
+            <option value="event">Event</option>
+            <option value="meeting">Meeting</option>
+        </select>
+        <input type="button" value="Create" onclick="show()" id="create_button"></input>
+    </form>
+    <div id="searchdiv">
+        <div>
+            <label for="sort_button" >Sort By:</label>
+            <select id="sortdatename">
+                <option  value="">--Select value--</option>
+                <option  value="Date">Date</option>
+                <option  value="Name">Title</option>
+            </select>
+            
+        </div>
+        <div>
+            <label for="taskTypefilter">Filter:</label>
+            <select id="taskTypefilter" onchange="filterfunction(value)">
+                <option value="">--Select a task--</option>
+                <option value="task">Task</option>
+                <option value="event">Event</option>
+                <option value="meeting">Meeting</option>
+            </select>
+        </div>
+        <input id="search" placeholder="search" >
+    </div>
+    <!-- <div><inpu
+         onclick="popup()" type="button" id="popbutton" value="click"></input>
+    </div>   -->
+    <table id="table">
+        <tr>
+            <th>Task Title</th>
+            <th>Date</th>
+            <th>Time</th>
+            <th>Type</th>
+            <th></th>
+            <th></th>
+        </tr>
+        <tbody id="map1"></tbody>
+    </table>
+    <button onclick="clearrecord()"  id="clearbutton">clear record</button>
+  
+    <div class="alertboxoverlay"></div>
+    <div id="alertbox"></div>
+    <div id="timechange"></div>
+    <audio id="myAudio">
+        <source src="newaudio.mp3" type="audio/mpeg">
+    </audio>
+
+
+</body>
+  <!-- <script src="taskmanagement.js"></script> -->
+  <script src="newtaskmanagement.js"></script>
+</html>

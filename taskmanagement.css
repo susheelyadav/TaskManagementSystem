@@ -1,0 +1,247 @@
+#title{
+    text-align: center;
+}
+
+
+body{
+    margin:0;
+    padding:0;
+    font-family:Geneva, Tahoma, sans-serif;
+    box-sizing: border-box;
+    /* background-color: #7761df; */
+}
+
+
+#menu{
+    display: flex;
+    margin:3rem auto;
+    width:90%;
+    max-width: 70rem;
+    padding:1.5rem;
+    background-color: whitesmoke;
+    border: 2px solid whitesmoke;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.25);
+    border-radius: 10px;
+    font-size: 14px;
+    font-weight: 500;
+
+}
+
+#menu:nth-child(n){
+    justify-content:space-around;
+}
+
+#menu input,select,#searcb{
+    border-radius: 6px;
+    font:inherit;
+    display: block;
+    border-width: 1px;
+    
+}
+
+#menu input:focus,#search:focus{
+    background-color: rgb(193, 188, 190);
+    border-color:rgb(209, 120, 163);
+    outline:none;
+    box-shadow: 1px 1px 40px rgba(0,0,0,0.25);
+}
+
+#create_button,.btn{
+    cursor: pointer;
+    background-color: rgb(19, 19, 163);
+    border-radius: 8px;
+    padding:5px 15px;
+    color:white;
+}
+
+#create_button:hover ,#create_button:active{
+    background-color: blue;
+}
+
+#table{
+    margin:2rem auto;
+    width:90%;
+    max-width: 80rem;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.25);
+    empty-cells: hide;
+    border-collapse: separate;
+   background-color: white;
+}
+
+th {
+    background-color: rgba(38,137,13,1);
+    border: 1px solid rgba(134,188,37,1);
+    font-weight: normal;
+    text-align: center;
+    color: white;   
+    width:16%;
+    padding:7px 15px;
+}
+
+tr{
+    background-color:whitesmoke;
+    /* border: 1px solid rgba(134,188,37,1); */
+    font-weight: normal;
+    text-align: center;
+    color:black;   
+    width:16%; 
+    padding:5px 15px;
+
+}
+
+
+
+#table button,#clearbutton{
+    cursor: pointer;
+    background-color: rgb(19, 19, 163);
+    border-radius: 8px;
+    padding:5px 15px;
+    color:white;
+    border-width: 1px;
+}
+
+#table button:hover,#table button:active,#clearbutton:hover,#clearbutton:active,.btn-new:hover,.btn-new:hover {
+    background-color:blue ;
+   
+}
+
+#popbutton{
+    display: block;
+    margin: 0 auto;
+ }
+
+
+ #alertbox,#timechange {
+    display: none;
+    position: fixed;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px #999;
+    width:20rem;
+    text-align:center;
+    padding:0 0 20px 0;
+}
+
+.alertboxoverlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+    backdrop-filter: blur(2px); /* Add a blur effect to the overlay */
+  }
+
+#alertbox h3,#timechange h3{
+    margin:0;
+    text-align: center;
+    background-color:pink;
+    padding:8px;
+}
+
+
+
+#datetime{
+    display: flex;
+    margin:20px 0px;
+    padding-bottom:25px;
+    justify-content: space-around;
+}
+
+
+.btn{
+    margin:0px 20px;
+    border:1px ;
+    background-color:#2d2dd8;
+}
+
+#datetime2{
+    margin:30px 5px 5px 5px;
+}
+
+.btn-new{
+    margin-top:30px;
+}
+
+
+
+#clearbutton{
+    display: block;
+    margin:0 auto;
+}
+
+
+
+/* #search{
+ margin-top:10px;
+ margin-left: 80%;
+ padding:5px;
+ border-radius: 8px;
+ border:1px solid;
+} */
+
+
+#searchdiv{
+    margin-top:50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    justify-items: self-end;
+}
+
+#searchdiv div{
+    display: flex;
+    flex-direction: row;
+}
+
+#threebox{
+    width:70%;
+    display: flex;
+    /* justify-content:space-around; */
+    justify-content:space-between;
+    margin:10px auto;
+    margin-bottom: 32px;
+}
+
+.box{
+    width:15%;
+    border-radius: 10px;
+    /* border: 1px solid black; */
+    text-align:CENTER;
+    padding:20px 1px;
+    box-shadow: 0 4px 9px rgba(0,0,0,0.25);
+    background-color: whitesmoke;
+    /* border: 2px solid whitesmoke; */
+}
+
+.box h5{
+    font-weight: 500;
+}
+
+.box h5,.box p{
+    margin:0px;
+}
+
+.box{
+    color:whitesmoke;
+}
+
+#box1{
+    background-color: #ff6f3c;
+}
+
+#box2{
+    background-color:  #3dc16a;
+}
+
+#box3{
+    background-color:#dc2f2f;
+}
+
